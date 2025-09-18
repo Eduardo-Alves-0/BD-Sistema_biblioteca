@@ -22,11 +22,11 @@ impressões idEmprestimo, idUsuario (FK), idLivro (FK), dataEmprestimo, dataDevo
 💾 População de Dados
 Exemplos de servidores no banco:
  - Livros:
-   "Dom Casmurro"
-   "1984"
-   "Ó Hobbit"
-   "A Culpa é das Estrelas"
-   "Código Limpo"
+ "Dom Casmurro"
+ "1984"
+ "Ó Hobbit"
+ "A Culpa é das Estrelas"
+ "Código Limpo"
 
 Usuários:
  - Ana Souza (Aluno)
@@ -39,6 +39,7 @@ Estimantes:
 Alguns já devolvidos, outros ativos ou atrasados
 
 🔎 Consultas de Exemplo
+
 1️⃣ Listar todos os livros
 
 SELEÇÃO * DE livros;
