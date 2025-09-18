@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS sistema_biblioteca;
+
 CREATE DATABASE sistema_biblioteca;
 USE sistema_biblioteca;
 
