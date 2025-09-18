@@ -40,6 +40,7 @@ Alguns já devolvidos, outros ativos ou atrasados
 
 🔎 Consultas de Exemplo
 1️⃣ Listar todos os livros
+
 SELEÇÃO * DE livros;
 
 2️⃣ Estimativos de um uso específico
