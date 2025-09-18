@@ -11,30 +11,37 @@ Permitir gerar:
 O projeto é público para estudos de SQL: criação de tabelas, relacionamentos (FK), inserção de dados e consultas avançadas com JOIN, GROUP BY e ORDER BY.
 
 🗂 Estrutura do Banco de Dados
-Tabelas e Atributos
-Mesa Campos principais
-livros id_livros, título, autor, editora, genero, quantidade_estoque, data_publicacao
-usuarios id, nome, contato, tipoUsuario (Aluno/Professor/Funcionário)
-alunos idAluno (FK → usuarios.id), matricula
-professores idProfessor (FK → usuarios.id), matricula
-funcionários idFuncionario (FK → usuarios.id), funcao, setor
-impressões idEmprestimo, idUsuario (FK), idLivro (FK), dataEmprestimo, dataDevolucaoPrevista, dataDevolucao, status
 
-💾 População de Dados
-Exemplos de servidores no banco:
- - Livros:
- "Dom Casmurro"
- "1984"
- "Ó Hobbit"
- "A Culpa é das Estrelas"
- "Código Limpo"
+| Mesa | Campos principais |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **livros**       | `id_livros`, `título`, `autor`, `editora`, `gênero`, `quantidade_estoque`, `dados_publicacao`                           |
+| **usuários**     | `id`, `nome`, `contato`, `tipoUsuário` (`Aluno` / `Professor` / `Funcionário`)                                         |
+| **Alunos**       | `idAluno` (FK → `usuários.id`), `matricula`                                                                            |
+| **professores**  | `idProfessor` (FK → `usuários.id`), `matricula`                                                                        |
+| **funcionários** | `idFuncionário` (FK → `usuários.id`), `funcao`, `setor`                                                                |
+| **prêmios**  | `idEmprestimo`, `idUsuário` (FK), `idLivro` (FK), `dadosEmprestimo`, `dadosDevolucaoPrevista`, `dadosDevolucao`, `status` |
 
-Usuários:
- - Ana Souza (Aluno)
- - Carlos Lima (Professor)
- - Fernanda Alves (Funcionária)
- - João Mendes (Aluno)
- - Mariana Rocha (Professora)
+
+População do banco
+### Livros
+
+| Título | Autor | Editora | Gênero | Quantidade | Dados de Publicação |
+| ---------------------- | ---------------------- | ------------------- | -------------------------------------------------------------------- | ----------- | ------------------- |
+| Dom Casmurro | Machado de Assis | Editora Globo | Romance | 5          | 01/01/1899 |
+| 1984 | Jorge Orwell | Companhia das Letras | Ficção Científica | 8          | 06/08/1949 |
+| Ó Hobbit | JRR Tolkien | HarperCollins | Fantasia | 10 | 21/09/1937 |
+| A Culpa é das Estrelas | João Verde | Intrseca | Romance | 7          | 01/10/2012 |
+| Código Limpo | Robert C. Martin | Pearson | Programação | 4          | 01/08/2008 |
+
+### Usuários
+
+| Nome | Tipo de Usuário |
+| -------------- | --------------- |
+| Ana Souza | Aluno |
+| Carlos Lima | Professor |
+| Fernanda Alves | Funcionária |
+| João Mendes | Aluno |
+| Mariana Rocha | Professora |
 
 Estimantes:
 Alguns já devolvidos, outros ativos ou atrasados
@@ -42,7 +49,6 @@ Alguns já devolvidos, outros ativos ou atrasados
 🔎 Consultas de Exemplo
 
 1️⃣ Listar todos os livros
-
 SELEÇÃO * DE livros;
 
 2️⃣ Estimativos de um uso específico
@@ -76,7 +82,7 @@ ONDE e.dataDevolucao > e.dataDevolucaoPrevista
 AGRUPAR POR u.id, u.nome
 ORDEM POR totalAtrasos DESC;
 
-⚡ Como Executar
+Como Executivo
 
 Clone o repositório:
 clone git https://github.com/Eduardo-Alves-0/BD-Sistema_biblioteca.git
