@@ -19,7 +19,7 @@ O projeto é público para estudos de SQL: criação de tabelas, relacionamentos
 | **Alunos**       | `idAluno` (FK → `usuários.id`), `matricula`                                                                            |
 | **professores**  | `idProfessor` (FK → `usuários.id`), `matricula`                                                                        |
 | **funcionários** | `idFuncionário` (FK → `usuários.id`), `funcao`, `setor`                                                                |
-| **prêmios**  | `idEmprestimo`, `idUsuário` (FK), `idLivro` (FK), `dadosEmprestimo`, `dadosDevolucaoPrevista`, `dadosDevolucao`, `status` |
+| **Chaves**  | `idEmprestimo`, `idUsuário` (FK), `idLivro` (FK), `dadosEmprestimo`, `dadosDevolucaoPrevista`, `dadosDevolucao`, `status` |
 
 
 População do banco
