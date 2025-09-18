@@ -76,7 +76,7 @@ ORDEM POR totalAtrasos DESC;
 ⚡ Como Executar
 
 Clone o repositório:
- - clone git https://github.com/seu-usuario/sistema-biblioteca-sql.git
+ - clone git [https://github.com/seu-usuario/sistema-biblioteca-sql.git](https://github.com/Eduardo-Alves-0/BD-Sistema_biblioteca/tree/main)
 
 Abra no MySQL Workbench ou outro cliente MySQL.
 Executar o script SQL:
